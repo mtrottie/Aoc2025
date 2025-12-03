@@ -1,0 +1,5 @@
+Package     Version
+----------- -------
+autopep8    2.3.2
+pip         25.2
+pycodestyle 2.14.0
