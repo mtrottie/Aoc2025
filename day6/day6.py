@@ -155,5 +155,12 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         print(day6(sys.argv[1]))
     else:
-        print("Day 6 part1:", day6(test2))
-        print("Day 6 part2:", day6_part2(test2))
+        res1 = day6(test2)
+        res2 = day6_part2(test2)
+
+        # Assert known correct answers for the provided input
+        assert res1 == 3785892992137, f"Day 6 part1 mismatch: {res1} != 3785892992137"
+        assert res2 == 7669802156452, f"Day 6 part2 mismatch: {res2} != 7669802156452"
+
+        print("Day 6 part1:", res1)
+        print("Day 6 part2:", res2)
